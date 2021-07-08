@@ -23,8 +23,13 @@ class NegativeNumberValidatorTest{
         Assert.assertFalse(SUT.isNegative(1))
     }
 
+    /*
+    * Good Naming is Important
+    * <unit of work> - <state> - <expected behaviour>
+    *
+    * */
     @Test
-    fun `isNegative with ZERO`(){
+    fun `isNegative with ZERO should be false`(){
         Assert.assertFalse(SUT.isNegative(0))
     }
 }
